@@ -1,58 +1,88 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Rakshith S Srinivasa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Webpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .profile-pic {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Rakshith S Srinivasa</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="CV.pdf">Curriculum&nbsp;Vitae</a></div>
-<div class="menu-item"><a href="https://scholar.google.com/citations?user=GUXFO7EAAAAJ&hl=en">Google&nbsp;Scholar</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Rakshith S Srinivasa</h1>
-</div>
-<table class="imgtable"><tr><td>
-<img src="webpage.jpg" alt="" />&nbsp;</td>
-<td align="left"><p><a href="https://sra.samsung.com/">Samsung Research America</a> <br />
-665 Clyde Ave <br />
-Mountain View, CA 94086, USA <br />
-E-mail: rakshith(dot)sharma(dot)s AT gmail(dot)com</p>
-</td></tr></table>
-<h2>About Me</h2>
-<p>I am a Research Scientist at Samsung Research America, CA.</p>
-<p>Previously, I worked as a Research Scientist at  <a href="iqvia.com/">IQVIA</a>. I received a Ph.D. in Electrical and Computer Engineering from <a href="http://www.gatech.edu">Georgia Institute of Technology</a> in 2020, where I was advised by <a href="https://jrom.ece.gatech.edu/">Prof. Justin Romberg</a>. At UT Austin, I also had the pleasure of working with <a href="https://mdav.ece.gatech.edu/">Prof. Mark Davenport</a>. Before attending Georgia Tech, I received a B.Tech. degree in Electronics and Communications Engineering from <a href="http://www.nitk.ac.in">National Institute of Technology (NIT) Surathkal</a> in 2014. <br /></p>
-<h2>Research Interests</h2>
-<ul>
-<li><p>Multimodal Machine Learning</p>
-</li>
-<li><p>Randomized Linear Algebra</p>
-</li>
-<li><p>Signal Processing</p>
-</li>
-</ul>
-<h2>News</h2>
-<ul>
-<li><p>One paper accepted at NeurIPS 2023:</p>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2309.14580">CWCL: Cross-Modal Transfer with Continuously Weighted Contrastive Loss</a></p>
-</li>
-</ul>
+    <div class="container">
+        <header class="section">
+            <img src="website_pic.JPG" alt="Rakshith S Srinivasa" class="profile-pic">
+            <h1>Rakshith S Srinivasa</h1>
+            <p>
+                <a href="https://scholar.google.com/citations?user=GUXFO7EAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
+                <a href="Rakshith_Srinivasa_CV.pdf" target="_blank">CV (PDF)</a> | 
+                <span id="email"></span>
+            </p>
+        </header>
 
-<p>Click <a href="publications.html">here</a> for the full list of publications.</p>
-</td>
-</tr>
-</table>
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>I am a senior machine learning researcher at Samsung Research America, Mountain View, CA.</p>
+            <p>My research interests include multimodal LLMs, cross-modal representation alignment and efficient inference. I am also interested in efficient algorithms for linear algebraic computations and in using tools from randomized linear algebra to solve optimization problems. </p>
+            <p>I obtained my Ph.D. from Georgia Institute of Technology, Atlanta in 2020. During my Ph.D., I worked on subspace learning, sketching methods for high-dimensional linear algebra, and array signal processing. Following my Ph.D., I was a research scientist at <a href="https://iqvia.com" target="_blank">IQVIA</a>, where I worked on graph neural networks and deep learning based ranking methods for applications in clinical trial patient recruitment and prediction of COVID-19 spread. I joined Samsung Research America as a senior ML researcher in 2021, where I have been working on multimodal learning, on-device AI, and LLM based language translation.</p>
+        </section>
+
+        <section class="section" id="publications">
+            <h2>Selected Publications</h2>
+            <ul>
+                <li><strong><a href="https://arxiv.org/abs/2309.14580" target="_blank">  CWCL: Cross-modal transfer with continuously weighted contrastive loss</a></strong> - Advances in Neural Information Processing Systems 36 (2023)</li>
+                <li><strong><a href="https://ieeexplore.ieee.org/abstract/document/10145920" target="_blank">Sketching low-rank matrices with a shared column space by convex programming</a></strong> - IEEE Journal on Selected Areas in Information Theory 4 (2023)</li>
+                <li><strong><a href="https://ieeexplore.ieee.org/abstract/document/10095428" target="_blank">To Wake-Up or Not to Wake-Up: Reducing Keyword False Alarm by Successive Refinement</a></strong> - ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2023</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Rakshith S Srinivasa</p>
+        </footer>
+    </div>
+
+    <script>
+        const user = "rakshith.sharma.s";
+        const domain = "gmail.com";
+        document.getElementById("email").innerHTML = 
+            `<a href="mailto:${user}@${domain}">${user} [at] ${domain}</a>`;
+    </script>
 </body>
 </html>
 
