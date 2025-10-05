@@ -1,101 +1,138 @@
-<!DOCTYPE html>
+i<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakshith Srinivasa - Personal Webpage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-            clear: both;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-   
-    h1 {
-       margin-top: 100px;
-       margin-left: 170px;
-       margin-bottom: 0;
-       }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rakshith S Srinivasa</title>
 
-    h2 {
-        margin-left: 0; /* Adjust to align with the text */
-    }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .profile-pic {
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 50px;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
+  <!-- Bootstrap & icon libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">  <!-- add this -->
+  <!-- Minimal page-specific styles -->
+  <style>
+    body { color: #333; }
+    .profile-pic { width: 170px; height: 170px; object-fit: cover; }
+    .object-cover { object-fit: cover; }
+    .social-icons a { opacity: 0.85; }
+    .social-icons a:hover { opacity: 1; }
+  </style>
 </head>
 <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
     <div class="container">
-        <header class="section">
-            <img src="website_pic.JPG" alt="Rakshith S Srinivasa" class="profile-pic">
-            <h1>Rakshith S Srinivasa</h1>
-            <p>
-                <a href="https://scholar.google.com/citations?user=GUXFO7EAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
-                <a href="Rakshith_Srinivasa_CV.pdf" target="_blank">CV</a> | 
-                <span id="email"></span>
-            </p>
-        </header>
+      <a class="navbar-brand fw-semibold" href="index.html">Rakshith S Srinivasa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+	<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+ 		 <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+ 		 <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+ 		 <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li> <!-- 👈 new tab -->
+ 		 <li class="nav-item"><a class="nav-link" href="misc.html">Misc</a></li>
+	</ul>
 
-        <section class="section" id="about">
-            <h2>About Me</h2>
-            <p>I am a senior machine learning researcher at Samsung Research America, Mountain View, CA.</p>
-            <p>My research interests include multimodal LLMs, cross-modal representation alignment and efficient inference. I am also interested in efficient algorithms for linear algebraic computations and in using tools from randomized linear algebra to solve optimization problems. </p>
-            <p>I obtained my Ph.D. from Georgia Institute of Technology, Atlanta in 2020. My advisor was <a href="https://ece.gatech.edu/directory/justin-romberg" target="_blank">Dr. Justin Romberg</a>. I also worked closely with <a href="https://mdav.ece.gatech.edu/" target="_blank">Dr. Mark Davenport</a>. During my Ph.D., I worked on subspace learning and sketching methods for high-dimensional linear algebra for applications in array signal processing. Following my Ph.D., I was a research scientist at <a href="https://iqvia.com" target="_blank">IQVIA</a>, where I worked on graph neural networks and deep learning based ranking methods for applications in clinical trial patient recruitment and prediction of COVID-19 spread. I joined Samsung Research America as a senior ML researcher in 2021, where I have been working on multimodal learning, on-device AI, and LLM based language translation.</p>
-           <p>Outside of research, I enjoy playing tennis (and most other racket sports), hiking, playing scrabble and <a href="https://www.instagram.com/intermittent_eating/" target="_blank">cooking</a>. I enjoy running and I have completed the San Francisco Marathon in 2023. I am also a dance enthusiast and enjoy latin dacing, including salsa and bachata.</p>
-        </section>
+      </div>
+    </div>
+  </nav>
 
-        <section class="section" id="publications">
-            <h2>Selected Publications</h2>
-            <ul>
-                <li><strong><a href="https://arxiv.org/abs/2309.14580" target="_blank">  CWCL: Cross-modal transfer with continuously weighted contrastive loss</a></strong> - Advances in Neural Information Processing Systems 36 (2023)</li>
-                <li><strong><a href="https://ieeexplore.ieee.org/abstract/document/10145920" target="_blank">Sketching low-rank matrices with a shared column space by convex programming</a></strong> - IEEE Journal on Selected Areas in Information Theory 4 (2023)</li>
-                <li><strong><a href="https://ieeexplore.ieee.org/abstract/document/10095428" target="_blank">To Wake-Up or Not to Wake-Up: Reducing Keyword False Alarm by Successive Refinement</a></strong> - ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2023</li>
-            </ul>
-        </section>
+  <!-- HERO / ABOUT -->
+  <section class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-3 text-center">
+        <img src="img/profile_picture.jpg" alt="Rakshith S Srinivasa" class="rounded-circle img-fluid profile-pic" />
+	  <!-- NEW: links below the picture -->
+	  <div class="mt-3 profile-links">
 
-        <footer class="footer">
-            <p>&copy; 2024 Rakshith S Srinivasa</p>
-        </footer>
+	    <!-- Logos row on the next line -->
+	    <div class="icon-row mt-2">
+		  <a href="Rakshith_CV.pdf" target="_blank" title="CV" aria-label="CV">
+		    <i class="fa-solid fa-file-lines fa-lg"></i>
+		  </a>
+	      <a href="https://www.linkedin.com/in/rsrinivasa/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+		<i class="fa-brands fa-linkedin fa-lg"></i>
+	      </a>
+	      <a href="https://twitter.com/rsharma9201" target="_blank" title="X (Twitter)" aria-label="X (Twitter)">
+		<i class="fa-brands fa-x-twitter fa-lg"></i>
+	      </a>
+		<a href="https://scholar.google.com/citations?user=GUXFO7EAAAAJ&hl=en" target="_blank" title="Google Scholar" aria-label="Google Scholar">
+		  <i class="fa-solid fa-graduation-cap fa-lg"></i>
+		</a>
+	    </div>
+
+	    <!-- Email on its own line -->
+	    <div class="small text-muted">
+	      <span id="email"></span>
+	    </div>
+	  </div>
+      </div>
+      <div class="col-md-9">
+
+	<section class="section" id="about">
+	 
+
+	  <p>
+	    I am a research scientist at <strong>Meta</strong>, where I work on LLM post-training and evaluations for safety. 
+	    My research focuses on developing methods that improve safe and reliable outcomes for large language models, including post-training techniques, synthetic and hybrid data design and generation, and model evaluation.
+	  </p>
+
+	  <p>
+	    More broadly, I am interested in multimodal representation learning (vision and audio), 
+            LLM post-training, and optimization. Previously, I have worked on signal processing, compressed sensing, 
+	    and randomized linear algebra. A selection of my recent research can be found 
+	    <a href="publications.html">here</a> and the full list of publications can be found on <a href="https://scholar.google.com/citations?user=GUXFO7EAAAAJ&hl=en" target="_blank">Google scholar</a>.
+	  </p>
+
+	  <p>
+	    I obtained my Ph.D. in Electrical and Computer Engineering from 
+	    <strong>Georgia Institute of Technology</strong> in 2020, where I was advised by 
+	    <a href="https://jrom.ece.gatech.edu" target="_blank">Dr. Justin Romberg</a> 
+	    and worked closely with 
+	    <a href="https://mdav.ece.gatech.edu/" target="_blank">Dr. Mark Davenport</a>. 
+	    My Ph.D. research focused on subspace learning and sketching methods for high-dimensional linear algebra, 
+	    with applications in array signal processing.
+	  </p>
+	</section>
+
+      </div>
     </div>
 
-    <script>
-        const user = "rakshith.sharma.s";
-        const domain = "gmail.com";
-        document.getElementById("email").innerHTML = 
-            `<a href="mailto:${user}@${domain}">${user} [at] ${domain}</a>`;
-    </script>
+<!-- NEWS -->
+<section id="news" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Align left edge with the About text column (3/9 split) -->
+      <div class="col-md-9 offset-md-3">
+        <h2 class="h4 mb-4">News</h2>
+        <ul id="news-list" class="list-unstyled m-0"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER SOCIALS -->
+  <footer class="border-top">
+    <div class="container py-4 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+      <div class="small text-muted">© 2025 Rakshith S Srinivasa</div>
+      <div class="d-flex gap-3 social-icons">
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom script -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
 </body>
 </html>
 

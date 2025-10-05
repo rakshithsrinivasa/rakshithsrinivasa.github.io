@@ -1,0 +1,29 @@
+[
+  {
+    "title": "TutorBench: A Benchmark To Assess Tutoring Capabilities Of Large Language Models",
+    "authors": "R. S. Srinivasa, et al.",
+    "venue": "",
+    "link": "https://scale.com/research/tutorbench",
+    "thumb": "img/papers/tutorbench.png",
+    "blurb": "TutorBench, is a benchmark that measures how well LLMs handle the real skills of tutoring: explaining complex topics in adaptive ways, providing meaningful feedback, and guiding active learning without just giving away the answer."
+  },
+  {
+    "title": "CWCL: Cross-modal transfer with continuously weighted contrastive loss",
+    "authors": "R. S. Srinivasa, et al.",
+    "venue": "NeurIPS 2023",
+    "link": "https://arxiv.org/abs/2309.14580",
+    "pdf": "",
+    "thumb": "img/papers/CWCL.png",
+    "blurb": "We propose a continuously weighted contrastive objective that enables robust cross-modal transfer by emphasizing ambiguous pairs and downweighting easy negatives, improving downstream retrieval and zero-shot performance."
+  },
+{
+  "title": "Decentralized sketching of low-rank matrices",
+  "authors": "R. S. Srinivasa, et al.",
+  "venue": "NeurIPS 2019",
+  "link": "https://dl.acm.org/doi/10.5555/3454287.3455193",
+  "pdf": "",  
+  "thumb": "img/papers/sketching-low-rank.png",
+  "blurb": "We present a decentralized algorithm for sketching a low-rank matrix when each column is compressed beyond individual recovery, and show convergence guarantees and empirical performance."
+}
+]
+
