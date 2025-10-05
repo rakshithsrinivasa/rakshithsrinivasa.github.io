@@ -1,0 +1,125 @@
+body { color:#333; }
+.profile-pic { width:170px; height:170px; object-fit:cover; }
+.social-icons a { opacity:0.85; }
+.social-icons a:hover { opacity:1; }
+.object-cover { object-fit: cover; }
+/* Publication thumbnail images (generic fallback if not using .pub-thumb) */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f8f9fa;
+  padding: 5px;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.pub-thumb {
+  width: 100%;
+  height: 180px;              /* desktop */
+  object-fit: contain;        /* show whole image */
+  object-position: center;
+  background-color: #f8f9fa;  /* letterbox background */
+  padding: 5px;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+@media (max-width: 992px) { .pub-thumb { height: 160px; } }
+@media (max-width: 768px)  {
+  .pub-thumb { height: 140px; padding: 3px; border-radius: .375rem .375rem 0 0; }
+  .card .row.g-0 { flex-direction: column; }
+  .card .col-md-4, .card .col-md-8 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* === Responsive sizing === */
+@media (max-width: 992px) {     /* tablets / medium screens */
+  .card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {     /* mobile phones / small screens */
+  .card img {
+    height: 140px;
+    padding: 3px;
+  }
+  .card .col-md-4,
+  .card .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card .row.g-0 {
+    flex-direction: column;     /* stack image on top of text */
+  }
+  .card img {
+    border-radius: 0.375rem 0.375rem 0 0; /* rounded top corners */
+  }
+}
+/* Fix icon alignment and remove stray marks */
+header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;              /* evenly spaced icons */
+  margin-bottom: 0;
+}
+
+header a {
+  text-decoration: none !important; /* remove underline or dash */
+  line-height: 1;
+}
+
+header i {
+  vertical-align: middle;   /* centers the icon vertically */
+  line-height: 1;
+  color: #2c3e50;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+header i:hover {
+  color: #007bff;           /* Bootstrap blue on hover */
+  transform: translateY(-2px);
+}
+/* Only the icons under the profile picture */
+.profile-links .icon-row {
+  display: flex;                 /* turn the row into a flex container */
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;                   /* <-- controls spacing between icons */
+  margin-bottom: 1rem;
+}
+
+.profile-links .icon-row a {
+  display: inline-flex;          /* fixes baseline quirks */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;  /* removes the underline "dashes" */
+  line-height: 1;                /* removes tiny descender gaps */
+}
+
+.profile-links .icon-row i {
+  line-height: 1;
+  vertical-align: middle;
+}
+.navbar-brand {
+  font-size: 2rem;  /* default is ~1.25rem */
+  font-weight: 600;   /* already has fw-semibold, but we can reinforce */
+}
+
+section ul li .text-muted {
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+}
+
+section ul li p {
+  font-size: 0.95rem;
+  color: #444;
+}
+section ul li h5 {
+  font-weight: normal;   /* removes bold */
+  font-style: italic;    /* makes it italic */
+  font-size: 0.95rem
+}
+
